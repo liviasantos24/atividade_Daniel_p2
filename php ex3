@@ -1,0 +1,9 @@
+<?php
+    
+    $salarioinicial = $_REQUEST["salario"];
+    $vendas = $_REQUEST["vendas"];
+
+
+    $salario_final = $salarioinicial + ($vendas * 0.04);
+
+    echo "O salário final é R$ $salario_final";
