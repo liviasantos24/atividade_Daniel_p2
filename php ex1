@@ -1,0 +1,15 @@
+<?php
+
+    $valorcarro = $_REQUEST ["valor"];
+
+    if ($valorcarro < 40000){
+        $valorfinal = $valorcarro * 1.05;
+    }
+    elseif ($valorcarro < 70000){
+        $valorfinal = $valorcarro * 1.25;
+    }
+    else {
+        $valorfinal = $valorcarro * 1.35;
+    }
+
+    echo "Valor final do veículo: R$ $valorfinal";
